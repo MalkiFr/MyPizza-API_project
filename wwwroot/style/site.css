@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(9, 9, 9);
+    display: grid;
+    justify-items: center;
+}
+
+p{
+    color: rgb(252, 251, 251);
+    text-align: center;
+    font-size: 250%;
+    font-family: monospace;
+
+}
+
+#line{
+    color: rgb(252, 251, 251);
+    text-align: center;
+    font-size: 150%;
+    font-family: monospace;
+}
+
+button{
+  background-color: #4CAF50;/* Green */ 
+  border: none;
+  border-radius: 3%;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+   
+}
+
+button:hover {
+    background-color: #fdfdfd; /* Green */
+    color: rgb(8, 8, 8);
+    border: 2px solid #4CAF50;
+  }

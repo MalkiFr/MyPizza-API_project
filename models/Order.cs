@@ -1,4 +1,4 @@
-namespace My_pizza;
+namespace My_pizza.Models;
 
 public class Order{
 

@@ -1,10 +1,12 @@
-using My_pizza.models;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using My_pizza.Models;
 
-namespace My_pizza.interface{
+namespace My_pizza.Interface{
 
- public interface Iorder{
-     public DateTime CreateDate {get; set;}
-     public List<Order> add(Order o);
+ public interface Iorder:ILifeTime
+ {
+     public List<Order> Add(Order o);
  }
 
 

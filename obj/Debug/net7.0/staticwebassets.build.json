@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "vQEEMzhVQuIfcNRe2/F9qsiHg825OVRnIAm5IsVfKAQ=",
+  "Hash": "qgJH/c4hFc+kmQnnj0VlBIOZO5p2zPlImAmkAqpKPqU=",
   "Source": "My_pizza",
   "BasePath": "_content/My_pizza",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "My_pizza\\wwwroot",
+      "Source": "My_pizza",
+      "ContentRoot": "C:\\Users\\saraf\\Documents\\תכנות-מלכי\\שנה ב\\API\\lesson4-My_pizza\\wwwroot\\",
+      "BasePath": "_content/My_pizza",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\saraf\\Documents\\תכנות-מלכי\\שנה ב\\API\\lesson4-My_pizza\\wwwroot\\index.html",
+      "SourceId": "My_pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\saraf\\Documents\\תכנות-מלכי\\שנה ב\\API\\lesson4-My_pizza\\wwwroot\\",
+      "BasePath": "_content/My_pizza",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\saraf\\Documents\\תכנות-מלכי\\שנה ב\\API\\lesson4-My_pizza\\wwwroot\\script\\site.js",
+      "SourceId": "My_pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\saraf\\Documents\\תכנות-מלכי\\שנה ב\\API\\lesson4-My_pizza\\wwwroot\\",
+      "BasePath": "_content/My_pizza",
+      "RelativePath": "script/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\saraf\\Documents\\תכנות-מלכי\\שנה ב\\API\\lesson4-My_pizza\\wwwroot\\style\\site.css",
+      "SourceId": "My_pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\saraf\\Documents\\תכנות-מלכי\\שנה ב\\API\\lesson4-My_pizza\\wwwroot\\",
+      "BasePath": "_content/My_pizza",
+      "RelativePath": "style/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style\\site.css"
+    }
+  ]
 }

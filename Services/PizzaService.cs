@@ -1,61 +1,72 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using My_pizza.Interface;
+using My_pizza.Models;
 
 namespace My_pizza.Services;
 
-public static class PizzaService :Ipizza{
-
-    static List<Pizza> Pizzot { get; }
+public class PizzaService :Ipizza{
+    
+    public DateTime CreateDate {get; set;}
+    List<Pizza> Pizzot { get; set;}
     static int nextId = 3;
 
-    static PizzaService()
+
+    public PizzaService()
     {
         Pizzot = new List<Pizza>
         {
-            new Pizza { Id = 1, Name = "Italiano", Gluten = true },
-            new Pizza { Id = 2, Name = "pizza free", Gluten = false }
+            new Pizza { Id = 1, Name = "Classic", IsGluten = true, Price=45 },
+            new Pizza { Id = 2, Name = "Italiano", IsGluten = true, Price=70 },
+            new Pizza { Id = 3, Name = "pizza free", IsGluten = false, Price=55 }
         };
+        CreateDate=DateTime.Now;
+        
+        
     }
 
 //מחזירה את מערך הפיצות 
-    public static List<Pizza> GetAll(){
+    public List<Pizza> GetAll(){
           return Pizzot;
     }
 
 //(id)מחזירה פיצה מתוך המערך לפי ערך מזהה
-    public static Pizza? GetId(int id){
+    public Pizza? GetId(int id){
          foreach(var p in Pizzot){
-            if(p.Id=id)
+            if(p.Id==id)
                 return p;
          }
         return null; 
     }
 
 //הוספת פיצה למערך
-    public static void Add(Pizza pizza)
+    public void Add(Pizza pizza)
     {
         pizza.Id = nextId++;
         Pizzot.Add(pizza);
     }
 
 //מחיקת פיצה מהמערך
-    public static void Delete(int id)
+    public void Delete(int id)
     {
-        var pizza = Get(id);
+        var pizza = GetId(id);
         if(pizza is null)
             return;
 
         Pizzot.Remove(pizza);
     }
 
-
-    public static void Update(Pizza pizza)
+//עדכון
+    public ActionResult<Pizza> Update(Pizza pizza)
     {
         var index = Pizzot.FindIndex(p => p.Id == pizza.Id);
-        if(index == -1)
-            return;
+        // if(index == -1)
+        //     return null;
 
-        Pizzaot[index] = pizza;
+        Pizzot[index] = pizza;
+        return pizza;
     }
+    ActionResult<Pizza?> Ipizza.Update(Pizza pizza){
+            throw new NotImplementedException();
+        }
 }
